@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Links in HTML</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Anton', sans-serif;
+        margin: 0;
+        background-color: #DDDDDD;
+    }
+    .wrap {
+        width: 1040px;
+        margin: 20px auto;
+    }
+    h2 {
+        color: #FF5511;
+        font-weight: normal;
+        margin: 0px 0;
+    }
+    section {
+        font-size: 30px;
+        width: 100%;
+        height: 700px;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: #dad7cd;         
+        text-align: center;
+    }
+    header {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0px 30px;
+        border-radius: 20px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;/*上下居中*/
+        position: sticky;
+        top: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+    header a {
+        color: #FF5511;
+        display: block;
+        text-decoration: none;
+    }
+    header h1 {
+        margin-right: auto;/*讓 menu 到右邊去*/
+    }
+
+    ul.menu {
+        display: flex; /*讓選單橫排*/
+        list-style: none;/*清除圓點*/
+        margin: 0;/*清除 ul 額外空間*/
+        padding: 0;/*清除 ul 額外空間*/
+        gap: 12px;
+    }
+    ul.menu a {
+        /*超連結的正常狀態*/
+        padding: 10px 20px;
+    }
+    ul.menu a:hover {
+        /*當滑鼠移上超連結時的狀態*/
+        background-color: #CCCCFF;
+        border-radius: 20px;
+    }
+    #video-container {
+            display: none;
+            text-align: center;
+        }
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+        
+        <header>
+            <h1 class="logo"><a href="index.htm">Favorite Athlete Moment<i class="fa-solid fa-fire"></i></a></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#籃球"><i class="fa-solid fa-basketball"></i>　籃球</a></li>
+                    <li><a href="#棒球"><i class="fa-solid fa-baseball-bat-ball"></i>　棒球</a></li>
+                    <li><a href="#排球"><i class="fa-solid fa-volleyball"></i>　排球</a></li>
+                    <li><a href="#足球"><i class="fa-regular fa-futbol"></i>　足球</a></li>
+                    <li><a href="#電競"><i class="fa-solid fa-gamepad"></i>　電子競技</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="籃球" >
+            <h2>籃球</h2>
+            
+            艾倫艾佛森（Allen Ezail Iverson）</br>
+            生日：1975年6月7日</br>
+            國籍：美國</br>
+            位置：控球後衛</br>
+            身高：183公分</br>
+            NBA生涯：1996年–2013年</br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zClEeH-Xr00" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="棒球">
+            <h2>棒球</h2>
+            鈴木一朗（Ichiro Suzuki）</br>
+            生日： 1973年10月22日</br>
+            國籍： 日本</br>
+            位置： 外野手</br>
+            身高： 180公分</br>
+            生涯：
+            1992年–2018年</br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bBmxuIsUmfM"  frameborder="0"  allowfullscreen></iframe>
+        </section>
+
+        <section id="排球">
+            <h2>排球</h2>
+            西田有志（Yuji Nishida）</br>
+            生日： 2000年1月30日</br>
+            國籍： 日本</br>
+            位置： 副攻手</br>
+            身高： 187公分</br>
+            生涯：
+            2017年–至今</br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c66RN87YjNE"  frameborder="0"  allowfullscreen></iframe>
+        </section>
+
+        <section id="足球">
+            <h2>足球</h2>
+            厄林·哈蘭德（Erling Braut Haaland）</br>
+            生日： 2000年7月21日</br>
+            國籍： 挪威</br>
+            位置： 前鋒</br>
+            身高： 194公分</br>
+            生涯：
+            2015年–至今</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AiKHsi9R1p4"  frameborder="0"  allowfullscreen></iframe>
+        </section>
+
+        <section id="電競">
+            <h2>電子競技</h2>
+            劉書瑋（Westdoor）</br>
+            生日： 1993年10月16日</br>
+            國籍： 臺灣</br>
+            位置： 中路</br>
+            身高： 177公分</br>
+            生涯：
+            2012年–2019年</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RLICvB7NhpA"  frameborder="0"  allowfullscreen></iframe>
+        </section>
+    </div>
+</body>
+</html>
